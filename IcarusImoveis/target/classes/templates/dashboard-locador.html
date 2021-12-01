@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/dashboard.css">
+    <link rel="stylesheet" href="style/global-style.css">
+    <script src="https://kit.fontawesome.com/fe8dd15147.js" crossorigin="anonymous" defer></script>
+    <script src="script/script.js" defer></script>
+    <script src="script/aaa.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR  -->
+    <header class="cabecalho">
+        <div class="navBar-container">
+            <nav class="navBar">
+                <h1>Logo</h1>
+                <ul>
+                    <li>Home</li>
+                    <li>Imóveis</li>
+                    <li>Sobre Nós</li>
+                    <li>Suporte</li>
+                </ul>
+                <div class="login-singin">
+                    <div class="button">CADASTRO</div>
+                    <div class="button invert-button"><img src="icons/perfil.svg"> LOGIN</div>
+                </div>
+                <button class="menu" onclick="">
+                    <img src="icons/Menu.svg">
+                </button>
+            </nav>
+        </div>
+        
+        <div class="cabecalho-meus-imoveis">
+            <a href="#"><i class="fas fa-angle-double-left"></i> Voltar a Meus Imoveis</a>
+            <h2>Endereço do Negócio</h2>
+        </div>
+        </header>
+<!--  -->
+
+
+<main>
+<section class="informacoes-servico">
+    <div class="carrossel"> 
+        
+        <img src="assets/803_df899154-e3b9-4e5f-a1fb-6b23820b6011_thm.jpg" class="imagems-carrossel active "alt="">
+        <img src="assets/96026334.jpg" class="imagems-carrossel" alt="">
+        <img src="assets/maxresdefault.jpg" class="imagems-carrossel" alt="">
+        <img src="assets/unnamed.jpg" class="imagems-carrossel" alt="">
+        <img src="assets/Imagem1.png" class="imagems-carrossel" alt="">
+      
+        <button class="btn-carrossel"></button>
+        <button class="btn-carrossel-1"></button>
+        <div class="bolinhas" id="bolinha"></div>
+    </div>
+<!-- DESCRICAO DO IMOVEL  -->
+<div class="servicos-dashboard">
+    <div class="preco-dashboard">
+      <input type="number" class="preco-dashboard" placeholder="R$ 9999.99">
+      <a href="#"><i class="fas fa-pen"></i>EDITAR PUBLICAÇÃO</a>
+      <a href="#"><i class="fas fa-pen"></i>EXCLUIR PUBLICAÇÃO</a>
+    </div>
+   
+    <div class="descricao-dashboard">        
+        <h2>DESCRIÇÃO</h2>
+        <textarea rows="5" colls="33" placeholder="Insira sua descrição" maxlength="1000"  th:field="*"></textarea>
+   </div>
+
+    <div class="dados-imovel-dashboard">
+        <h2>DADOS DO IMOVEL </h2>
+        <div class="dados-imovel-dashboard-especificacoes">
+            <div class="especificacoes-info">
+                <span class="titulo-especificacao-dashboard">Cidade</span>
+                <input class="conteudo-especificacao-dashboard" placeholder="Ex: Cidade" th:field="*"></input>
+            </div>
+            
+            <div class="especificacoes-info">
+                <span class="titulo-especificacao-dashboard">Bairro</span>
+                <input class="conteudo-especificacao-dashboard"  placeholder="Ex: Osasco-Beach"></input>
+            </div>
+            
+            <div class="especificacoes-info">
+                <span class="titulo-especificacao-dashboard">Construido em</span>
+                <input class="conteudo-especificacao-dashboard" placeholder="Ex: 2003" th:field="*"></input>
+            </div>
+            
+            <div class="especificacoes-info">
+                <span class="titulo-especificacao-dashboard">Vigilância</span>
+                <input class="conteudo-especificacao-dashboard" placeholder="Ex: 24" th:field="*"></input>
+            </div>
+            
+            <div class="especificacoes-info">
+                <span class="titulo-especificacao-dashboard">Estacionamento</span>
+                <input class="conteudo-especificacao-dashboard"placeholder="Sim" th:field="*"></input>
+            </div>
+            
+            <div class="especificacoes-info">
+                <span class="titulo-especificacao-dashboard">Tamanho m²</span>
+                <input class="conteudo-especificacao-dashboard " placeholder="100m²" th:field="*"></input>
+            </div>
+            
+            <div class="especificacoes-info">
+                <span class="titulo-especificacao-dashboard">Banheiros</span>
+                <input class="conteudo-especificacao-dashboard" placeholder="4" th:field="*"></input>
+            </div>
+            
+            <!-- ALTERAR APÓS COMPONENTIZAÇÃO -->
+            <div class="especificacoes-info">
+                <span class="titulo-especificacao-dashboard">Preço por m²</span>
+                <input class="conteudo-especificacao-dashboard" placeholder="R$ 300" th:field="*"></input>
+            </div>
+        </div>
+
+</div>
+</div>
+</section>
+</main>
+</body>
+</html>
