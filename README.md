@@ -1,4 +1,4 @@
 # back
-Ultima modificação: André/
+Ultima modificação: André/Chico
 Vídeo: #11 Curso Spring Boot: Inserindo Dados no Banco com JPA e Hibernate/
-Não Consegui fazer a página dashboard-locator.html funcionar
+Página dashboard-locator.html funcionando.
