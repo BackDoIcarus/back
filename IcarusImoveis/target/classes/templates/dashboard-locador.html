@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br"  xmlns:th="http://www.thymeleaf.org">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style/global-style.css">
     <script src="https://kit.fontawesome.com/fe8dd15147.js" crossorigin="anonymous" defer></script>
     <script src="script/script.js" defer></script>
-    <script src="script/aaa.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <!-- NAVBAR  -->
@@ -53,70 +54,146 @@
         <img src="assets/unnamed.jpg" class="imagems-carrossel" alt="">
         <img src="assets/Imagem1.png" class="imagems-carrossel" alt="">
       
-        <button class="btn-carrossel"></button>
-        <button class="btn-carrossel-1"></button>
+        <button class="btn-carrossel">></button>
+        <button class="btn-carrossel-1"><</button>
+        
         <div class="bolinhas" id="bolinha"></div>
+    
     </div>
 <!-- DESCRICAO DO IMOVEL  -->
 <div class="servicos-dashboard">
-    <div class="preco-dashboard">
-      <input type="number" class="preco-dashboard" placeholder="R$ 9999.99">
-      <a href="#"><i class="fas fa-pen"></i>EDITAR PUBLICAÇÃO</a>
-      <a href="#"><i class="fas fa-pen"></i>EXCLUIR PUBLICAÇÃO</a>
-    </div>
+    
+    <form class="preco-dashboard">
+        <input type="number"></input>
+        <a href="#"><i class="fas fa-pen"></i>EDITAR PUBLICAÇÃO</a>
+    </form>
    
-    <div class="descricao-dashboard">        
+    <div class="descricao-dashboard">
+
         <h2>DESCRIÇÃO</h2>
-        <textarea rows="5" colls="33" placeholder="Insira sua descrição" maxlength="1000"  th:field="*"></textarea>
-   </div>
+        <form action="">
+        <textarea rows="5" colls="33"  placeholder="Insira sua descrição" maxlength="1000">
+           
+            </textarea>
+        </form>
+    </div>  
 
     <div class="dados-imovel-dashboard">
         <h2>DADOS DO IMOVEL </h2>
         <div class="dados-imovel-dashboard-especificacoes">
-            <div class="especificacoes-info">
+            <form class="especificacoes-info">
                 <span class="titulo-especificacao-dashboard">Cidade</span>
-                <input class="conteudo-especificacao-dashboard" placeholder="Ex: Cidade" th:field="*"></input>
-            </div>
+                <input class="conteudo-especificacao-dashboard" value="São Paulo"></input>
+            </form>
             
-            <div class="especificacoes-info">
+            <form class="especificacoes-info">
                 <span class="titulo-especificacao-dashboard">Bairro</span>
-                <input class="conteudo-especificacao-dashboard"  placeholder="Ex: Osasco-Beach"></input>
-            </div>
+                <input class="conteudo-especificacao-dashboard"  value="Osasco-Beach"></input>
+            </form>
             
-            <div class="especificacoes-info">
+            <form class="especificacoes-info">
                 <span class="titulo-especificacao-dashboard">Construido em</span>
-                <input class="conteudo-especificacao-dashboard" placeholder="Ex: 2003" th:field="*"></input>
-            </div>
+                <select class="selector-data">
+                   
+                </select>
+            </form>
             
-            <div class="especificacoes-info">
+            <form class="especificacoes-info">
                 <span class="titulo-especificacao-dashboard">Vigilância</span>
-                <input class="conteudo-especificacao-dashboard" placeholder="Ex: 24" th:field="*"></input>
-            </div>
+                <input class="conteudo-especificacao-dashboard" value="24"></input>
+            </form>
             
-            <div class="especificacoes-info">
+            <form class="especificacoes-info">
                 <span class="titulo-especificacao-dashboard">Estacionamento</span>
-                <input class="conteudo-especificacao-dashboard"placeholder="Sim" th:field="*"></input>
-            </div>
+                <select class="conteudo-especificacao-dashboard">
+                   <option></option>
+                </select>
+            </form>
             
-            <div class="especificacoes-info">
-                <span class="titulo-especificacao-dashboard">Tamanho m²</span>
-                <input class="conteudo-especificacao-dashboard " placeholder="100m²" th:field="*"></input>
-            </div>
+          
             
-            <div class="especificacoes-info">
+            <form class="especificacoes-info">
                 <span class="titulo-especificacao-dashboard">Banheiros</span>
-                <input class="conteudo-especificacao-dashboard" placeholder="4" th:field="*"></input>
-            </div>
+                <input class="conteudo-especificacao-dashboard" value="4"></input>
+            </form>
             
-            <!-- ALTERAR APÓS COMPONENTIZAÇÃO -->
-            <div class="especificacoes-info">
+            <form class="especificacoes-info">
                 <span class="titulo-especificacao-dashboard">Preço por m²</span>
-                <input class="conteudo-especificacao-dashboard" placeholder="R$ 300" th:field="*"></input>
-            </div>
+                <input class="conteudo-especificacao-dashboard" maxlength=""></input>
+            </form>
+
+            <form class="especificacoes-info">
+                <span class="titulo-especificacao-dashboard">Tamanho</span>
+                <input class="conteudo-especificacao-dashboard "></input>
+            </form>
         </div>
 
 </div>
 </div>
+</section>
+<!-- GRAFICO  -->
+<section class="grafico-usuarios-interessados">
+ 
+    
+    <div class="usuarios-interessados">
+    
+    <!-- GRAFICOS  -->
+    
+    <!--  -->
+
+
+    <div class="titulo-usuario">USUARIOS INTERESSADOS</div> 
+        <div class="usuario-dashboard">
+    
+            <div class="informacoes-dashboard">
+                <img src="icons/Estrela.svg">
+                <span class="nome-usuario">Usuario da Icarus 1<br> +5511953833389 </span>
+            </div>
+        
+            <div class="informacoes-dashboard-1">
+                <span class="telefone-usuario">Entrou em contato com você em: 00/00/0000<br>ás 00h00 </span>
+            </div>
+            
+        </div>
+
+            <div class="usuario-dashboard">
+            
+                <div class="informacoes-dashboard">
+                    <img src="icons/Estrela.svg">
+                    <span class="nome-usuario">Usuario da Icarus 1<br> +5511953833389 </span>
+                </div>
+                
+                <div class="informacoes-dashboard-1">
+                    <span class="telefone-usuario">Entrou em contato com você em: 00/00/0000<br>ás 00h00 </span>
+                </div>
+            
+            </div>
+
+            <div class="usuario-dashboard">
+                    <div class="informacoes-dashboard">
+                        <img src="icons/Estrela.svg">
+                        <span class="nome-usuario">Usuario da Icarus 1<br> +5511953833389 </span>
+                    </div>
+                
+                    <div class="informacoes-dashboard-1">
+                        <span class="telefone-usuario">Entrou em contato com você em: 00/00/0000<br>ás 00h00 </span>
+                    </div> 
+            </div>
+
+                    <div class="usuario-dashboard">
+            
+                        <div class="informacoes-dashboard">
+                            <img src="icons/Estrela.svg">
+                            <span class="nome-usuario">Usuario da Icarus 1<br> +5511953833389 </span>
+                        </div>
+                    
+                        <div class="informacoes-dashboard-1">
+                            <span class="telefone-usuario">Entrou em contato com você em: 00/00/0000<br>ás 00h00 </span>
+                        </div>
+                    
+                    </div>
+    </div>
+
 </section>
 </main>
 </body>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Gustavo José Pereira">
+    <script src="script/cadastroImovel.js" defer></script>
+    <link rel="stylesheet" href="style/global-style.css">
+    <link rel="stylesheet" href="style/cadastro-imove.css">
+
+    <title>Cadastro Imoveis</title>
+</head>
+
+<body>
+    <header>
+        <div class="navBar-container">
+            <nav class="navBar">
+                <h1>Logo</h1>
+                <ul>
+                    <li>Home</li>
+                    <li>Imóveis</li>
+                    <li>Sobre Nós</li>
+                    <li>Suporte</li>
+                </ul>
+                <div class="login-singin">
+                    <div class="button">CADASTRO</div>
+                    <div class="button invert-button"><img src="icons/perfil.svg"> LOGIN</div>
+                </div>
+                <button class="menu">
+                    <img src="icons/Menu.svg">
+                </button>
+            </nav>
+        </div>
+
+        <div class="cabecalho-meus-imoveis">
+
+            <h2>Cadastrar Imovel</h2>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form class="formulario" method="post" action="InsertImovel" th:object="${imovel}">
+                <div class="progress"></div>
+                <div class="step">
+                    <span class="pergunta-cadastro-imovel">Nos informe mais sobre a localização do seu imovel</span>
+                    <div class="inputs-cadastro">
+                    <label for="">Informe o seu CEP</label>
+                    <input type="number" onblur="pesquisacep(this.value);" maxlength="8" id="cep" name="cep" class="input-number input" th:field="*{cep}">
+                    <label for="">Informe a sua Rua</label>
+                    <input type="text"  class="input-number input" id="rua" name="rua" th:field="*{street}">
+                    <label for="">Informe o número do imovel</label>
+                    <input type="text" class="input-number input" id="numero" th:field="*{number}">
+                    <label for="">Informe o seu Bairro</label>
+                    <input type="text" class="input-number input" id="bairro" name="bairro" th:field="*{district}">
+                    <label for="">Informe a sua cidade</label>
+                    <input type="text"  class="input-number input" id="cidade" name="cidade" th:field="*{city}">
+                </div>
+                </div>
+                
+                <div class="step">
+                    <span class="pergunta-cadastro-imovel">Quantos o tamanho em m² do imovel? </span>
+                    <label for="">Tamanho em m²</label>
+                    <input type="number" maxlength="8" class="input-number input" th:field="*{area}"></input>
+                </div>
+                    
+                <div class="step">
+                <span class="pergunta-cadastro-imovel">Quantos o tamanho em m² do imovel? </span>
+                <label for="">Informe o preço do Imovel</label>
+                <input type="number" class="input-number input" th:field="*{rent_price}"></input>
+                </div>
+
+                 <div class="step">
+                <span class="pergunta-cadastro-imovel">Quantos o tamanho em m² do imovel? </span>
+                <label for="">Informe o titulo do seu anuncio</label>
+                <input type="text"  class="input-number input" th:field="*{name}"></input>
+                </div>
+                    
+                <div class="step">
+                    <span class="pergunta-cadastro-imovel">Nos informe quando o seu imovel foi construido</span>
+                    <label for="">Informe o o ano</label>
+                    <select class="selector-data input" th:field="*{construction_year}">
+                    <option th:each="i:${#numbers.sequence(1900,2021)}" th:value="${i}" th:text="${i}"></option>
+                    </select>
+                </div>
+
+                <div class="step">
+                    <span class="pergunta-cadastro-imovel">O imovel possui Vigilância ? </span>
+                    <label for="">Informe o se o imovel pussui vigilancia</label>
+                    <select class="selector input">
+                    <option th:each="surveillance:${T(icarus.enums.Surveillance).values()}"
+                    th:value="${surveillance}" th:text="${surveillance}"></option>
+                    </select>
+                </div>
+
+                <div class="step">
+                    <span class="pergunta-cadastro-imovel">O imovel possui estacionamento? </span>
+                    <label for="">Possui estacionamento ?</label>
+                    <select class="selector input">
+                    <option th:each="parkinlots:${T(icarus.enums.Parkinlots).values()}"
+                    th:value="${parkinlots}" th:text="${parkinlots}"></option>
+                    </select>
+                </div>
+
+                <div class="step">
+                    <span class="pergunta-cadastro-imovel">O imovel possui banheiros ? </span>
+
+
+                    <label for="">Informe quantos banheiros</label>
+                    <select class="selector input">
+                         <option th:each="j:${#numbers.sequence(0,10)}" th:value="${j}" th:text="${j}"></option>
+                    </select>
+                    <button type="submit">Anunciar Imóvel</button>
+                </div>
+                <button type="button" class="btn-next">Proximo</button>
+                <button type="button" class="btn-previous">Voltar</button>
+            </form>
+            </section>
+        </main>
+        </body>

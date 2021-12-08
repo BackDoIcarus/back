@@ -25,6 +25,11 @@ a {
     color: white;
 }
 
+selector:focus{
+    outline: none;
+    border: none;
+}
+
 a:focus {
     color: initial;
 }

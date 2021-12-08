@@ -60,7 +60,7 @@
 
 .informacoes-servico {
     width: 100%;
-    background-color: #1F1E1F;
+    background-color: #222;
 
 }
 
@@ -150,6 +150,7 @@
         'preco descricao descricao '
         'preco dados dados'
     ;
+    padding: 20px 30px;
 }
 
 
@@ -165,7 +166,6 @@
 }
 
 .preco-dashboard a{
-	margin-bottom:10px;
     padding: 15px 40px;
     background-color: rgba(255, 247, 239, 70%);
     color: black;
@@ -179,7 +179,26 @@
     gap: 30px;
     grid-area: descricao;
     background-color: #222;
-    padding: 20px 30px;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.descricao-dashboard textarea{
+    resize: none;
+    background: none;
+    width: 100%;
+    color: white;
+    font-family: Coda;
+    font-size: 1.4rem;
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+
+.descricao-dashboard textarea::-webkit-scrollbar{
+    display: none;
+}
+.descricao-dashboard textarea:focus{
+    outline: none;
 }
 
 .preco-dashboard input{
@@ -189,15 +208,16 @@
     background: none;
     margin-bottom: 10px;
     text-align: center;
+    
 
-}
-
-.preco-dashboard input:focus{
-    outline: none;
+    
 }
 
 .preco-dashboard input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
+}
+.preco-dashboard input:focus{
+    outline: none;    
 }
 
 .descricao-dashboard h2 {
@@ -205,20 +225,8 @@
     color: #fff;
 }
 
-.descricao-dashboard textarea{
-    resize: none;
-    background: none;
-    width: 100%;
-    color: white;
-    font-family: Coda;
-    font-size: 2rem;
-}
-
-.descricao-dashboard textarea::-webkit-scrollbar{
-    display: none;
-}
-.descricao-dashboard textarea:focus{
-    outline: none;
+.descricao-dashboard p {
+    color: #fff;
 }
 
 .dados-imovel-dashboard {
@@ -262,6 +270,26 @@ font-size:18px;
 font-family: Coda;
 }
 
+
+.selector-data::-webkit-scrollbar{
+    display: none;
+}
+
+.selector{
+    justify-content: start;
+    width: 150px;
+    height: 100%;
+    color: white;
+    background: none;
+    font-size:18px;
+    font-family: Coda; 
+    }
+
+    
+.selector option{
+        background-color: #299689;
+       }
+
 .conteudo-especificacao-dashboard:focus{
     outline: none;
 }
@@ -274,20 +302,26 @@ font-family: Coda;
     width: 100%;
    background-color: white;
    padding: 50px 30px;
+   background: #299689;
 
+}
+
+.titulo-usuario{
+    width: 100%;
+    font-size: 2rem;
+    color: white;
 }
 
 .usuarios-interessados{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    
 }
 
 .usuario-dashboard{
     display: flex; 
     height: 200px;
     justify-content: space-between;
+    border-bottom: 1px solid white;
+    color: white;
 }
 
 .informacoes-dashboard{
@@ -307,11 +341,13 @@ font-family: Coda;
 }
 
 .usuario-dashboard .nome-usuario{
-font-size: 2rem;
+    font-size: 1.9rem;
 }
-
-
-
 .usuario-dashboard img{
     width: 100px;
+}
+
+.telefone-usuario {
+    font-size: 1.5rem;
+    text-align: right;
 }

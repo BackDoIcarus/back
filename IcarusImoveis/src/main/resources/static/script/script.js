@@ -1,10 +1,18 @@
-//NAVBAR
+//Gerador de ano cadastro do imovel
+// Se der BO, fazer pelo Thymeleaf
+const seletor2 = document.querySelector('.selector-data');
+for (let i = 2021; i > 1900; i--) {
+        seletor2.innerHTML += `<option>${i}</option>`;
+}
+
 
 const navbar = document.querySelector('.navBar-container');
 const mobile = document.querySelector('.menu');
 
 mobile.addEventListener('click', () => {
         navbar.classList.toggle("active");
+
+
 })
 
 window.addEventListener("scroll", () => {
@@ -14,6 +22,7 @@ window.addEventListener("scroll", () => {
                 navbar.style.background = "none"
         }
 });
+
 //----------------------------------------
 
 // DROPDOWN

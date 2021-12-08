@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,10 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="Gustavo José Pereira">
-<script src="script/script.js" defer></script>
+    <script src="script/script.js" defer></script>
     <link rel="stylesheet" href="style/global-style.css">
     <link rel="stylesheet" href="style/conta.css">
 
-    <script src="script/cadastro.js" defer></script>
-    <script src="script/script.js" defer></script>
-    
     <title>Cadastro | Icarus</title>
 </head>
 
@@ -77,7 +74,7 @@
                         </div>
                     </div>
                     <div class="criar-conta-container">
-                        <div id="primeiraTela">
+                        <form>
                             <h2>Crie sua conta gratuitamente</h2>
                             <button id="cadastrarGoogle"> <img src="icons/Google-Cadastro.svg">Cadastrar-se com o Google</button>
                             <button id="cadastrarFacebook"> <img src="icons/Facebook-cadastro.svg"> Cadastrar-se com o Facebook</button>
@@ -86,14 +83,7 @@
 
                             <input type="email" placeholder="emailcliente@email.com.br">
                             <button id="cadastrarEmail"> <img src="/icons/AviaoPapel.svg"> Cadastrar-se com Email</button>
-                        </div>
-                        <div id="segundaTela" class="deactivated">
-                            <button class="botao-voltar">Voltar</button>
-                            <input type="email">
-                            <input type="email">
-                            <input type="email">
-                            <input type="email">
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

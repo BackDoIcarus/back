@@ -1,0 +1,87 @@
+.cabecalho-meus-imoveis{
+    height: 300px;
+    background: #299689;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 30px;
+    padding: 80px 30px;
+}
+
+
+.cabecalho-meus-imoveis h2{
+font-size: 3rem;
+
+}
+
+.sessao-imoveis{
+    background-color: #222;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+   
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 50px;
+    padding: 30px 0;
+    
+    
+}
+
+.imoveis{
+    width: 70%;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.imoveis img{
+    width: 100%;
+    height: 100%;
+}
+
+.descricao {
+    text-align: center;
+}
+
+.btn-div{
+    padding: 20px;
+}
+
+.btn-lista-imovel{
+padding: 10px;
+background-color: black;
+}
+.btn-lista-imovel a{
+    font-size: 1.3rem;
+    font-family: Coda;
+}
+
+.btn-lista-imovel a:focus{
+    color: white;
+    
+}
+
+.btn-criar{
+    width: 100%;
+    background-color: #222;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-criar button{
+    background-color: #299689;
+    padding: 15px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-family: Coda;
+    color: white;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add a default marker to a web map</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+<style>
+body { margin: 30px; padding: 30px; }
+#map { position: absolute; top: 50px; bottom: 50px; width: 50%; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<script>
+	// TO MAKE THE MAP APPEAR YOU MUST
+	// ADD YOUR ACCESS TOKEN FROM
+	// https://account.mapbox.com
+	mapboxgl.accessToken = 'pk.eyJ1IjoicGVkcm9yb2NzIiwiYSI6ImNrd3J1MWJ6YjEwMTIybmp2N3lxMjIwMnMifQ.K77G5ulG3iUpSZo1vz7iYw';
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-46.6642375407539, -23.515192189914238],
+        zoom: 8
+    });
+
+    // Create a default Marker and add it to the map.
+    const marker1 = new mapboxgl.Marker()
+        .setLngLat([-48.18813722041017, -21.77673662255914])
+        .addTo(map);
+
+    // Create a default Marker, colored black, rotated 45 degrees.
+    const marker2 = new mapboxgl.Marker({ color: 'black', rotation: 0 })
+        .setLngLat([-48.16945095996171, -21.764398938469128])
+        .addTo(map);
+</script>
+
+</body>
+</html>

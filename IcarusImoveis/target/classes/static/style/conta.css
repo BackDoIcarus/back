@@ -205,14 +205,14 @@
     color: var(--secundaria);
 }
 
-.tela-cadastro-criar-conta .criar-conta-container div {
+.tela-cadastro-criar-conta .criar-conta-container form {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
 }
 
-.tela-cadastro-criar-conta .criar-conta-container div h2 {
+.tela-cadastro-criar-conta .criar-conta-container form h2 {
     font-family: var(--displayFont);
     font-style: normal;
     font-weight: normal;
@@ -221,7 +221,7 @@
     margin-bottom: 25px;
 }
 
-.tela-cadastro-criar-conta .criar-conta-container div button {
+.tela-cadastro-criar-conta .criar-conta-container form button {
     width: 290px;
     height: 43px;
     font-family: var(--displayFont);
@@ -245,7 +245,7 @@
     background-color: #1E1EFF;
 }
 
-.tela-cadastro-criar-conta .criar-conta-container div input {
+.tela-cadastro-criar-conta .criar-conta-container form input {
     width: 290px;
     height: 43px;
     background-color: var(--terciaria);
@@ -258,20 +258,11 @@
     text-align: center;
 }
 
-.tela-cadastro-criar-conta .criar-conta-container div input::placeholder {
+.tela-cadastro-criar-conta .criar-conta-container form input::placeholder {
     color: var(--secundaria);
     opacity: 0.8;
 }
 
-/* Formulário */
-
-.deactivated {
-    display: none !important;
-}
-
-.tela-cadastro-criar-conta .criar-conta-container div .botao-voltar {
-    width: 20px;
-}
 
 /* -----------------
     RESPONSIVIDADE 
