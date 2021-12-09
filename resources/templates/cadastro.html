@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Gustavo José Pereira">
+    <script src="script/script.js" defer></script>
+    <link rel="stylesheet" href="style/global-style.css">
+    <link rel="stylesheet" href="style/conta.css">
+
+    <title>Cadastro | Icarus</title>
+</head>
+
+<body>
+    <header>
+        <div class="navBar-container">
+            <nav class="navBar">
+                <h1>Logo</h1>
+                <ul>
+                    <li>Home</li>
+                    <li>Imóveis</li>
+                    <li>Sobre Nós</li>
+                    <li>Suporte</li>
+                </ul>
+                <div class="login-singin">
+                    <div class="button">CADASTRO</div>
+                    <div class="button invert-button"><img src="icons/perfil.svg"> LOGIN</div>
+                </div>
+                <button class="menu">
+                    <img src="icons/Menu.svg">
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="tela-cadastro">
+            <div class="tela-cadastro-container">
+                <div class="tela-cadastro-beneficios">
+                    <div class="beneficio apresentacao">
+                        <h2>EMPRESA LEGAL</h2>
+                        <p>Anuncie aqui o seu imóvel e faça sua pesquisa de mercado.</p>
+                    </div>
+
+                    <div class="beneficio">
+                        <img src="icons/Mapa.svg">
+                        <h3>Mapa Interativo da Cidade</h3>
+                        <p>Nós nos preocupamos com a informatividade da sua escolha. </p>
+                    </div>
+
+                    <div class="beneficio">
+                        <img src="icons/Estrela.svg">
+                        <h3>Mantenha um portfólio de seus imóveis favoritos</h3>
+                        <p>Uma forma simples de manter atenção no que você mais gostar. </p>
+                    </div>
+
+                    <div class="beneficio">
+                        <img src="icons/BaloesCifrao.svg">
+                        <h3>Mais exposição, menos trabalho.</h3>
+                        <p>Procuramos conectar locatários com locadores dos espaços ideais para suas empresas, sem
+                            interromper o fluxo natural da negociação. </p>
+                    </div>
+                </div>
+
+                <div class="tela-cadastro-criar-conta">
+                    <div class="botoes-conta-container">
+                        <div class="botoes-conta">
+                            <p>Já tem uma conta?</p>
+                            <button>ENTRE</button>
+                        </div>
+                    </div>
+                    <div class="criar-conta-container">
+                        <form>
+                            <h2>Crie sua conta gratuitamente</h2>
+                            <button id="cadastrarGoogle"> <img src="icons/Google-Cadastro.svg">Cadastrar-se com o Google</button>
+                            <button id="cadastrarFacebook"> <img src="icons/Facebook-cadastro.svg"> Cadastrar-se com o Facebook</button>
+
+
+
+                            <input type="email" placeholder="emailcliente@email.com.br">
+                            <button id="cadastrarEmail"> <img src="/icons/AviaoPapel.svg"> Cadastrar-se com Email</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav>
+            <h3>Política de Privacidade</h3>
+            <h3>© 2021 - Icarus Imóveis</h3>
+            <ul>
+                <li><a href=""><img src="icons/Facebook.png" alt=""></a></li>
+                <li><a href=""><img src="icons/Linkedin.png" alt=""></a></li>
+                <li><a href=""><img src="icons/GitHub.svg" alt=""></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+body{
+    background-color: white;
+}
+
+.cabecalho-meus-imoveis {
+    background-color: #299689;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-meus-imoveis h2{
+    font-size: 4rem;
+}
+form{
+height: auto;
+    background-color: white;
+}
+
+.step {
+   height: auto;
+  
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    display: none;
+    row-gap: 20px;
+}
+.step textarea{
+    resize: none;
+    width: 60%;
+    height: 200px;
+    border: 1px solid black;
+    font-size: 2rem;
+    font-family: Coda;
+    padding: 10px;
+}
+
+.inputs-cadastro{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.step.active {
+    display: flex; 
+}
+
+.step label {
+    margin: 30px 0;
+    font-size: 1.9rem;
+    color: #222;
+}
+
+.step button{
+    padding: 20px;
+    font-size: 1.5rem;
+    font-family: Coda;
+    margin-top: 20px;
+    background-color: #299689;
+    color: white;
+}
+
+.pergunta-cadastro-imovel {
+    color: black;
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.input-number:focus {
+    outline: none;
+}
+
+.input-number {
+    height: 40px;
+    width: 300px;
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+    font-family: Coda;
+}
+
+.input-number[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.selector-data{
+    width: 300px;
+    font-size: 30px;
+    color: #222;
+    border-bottom: 1px solid black;
+}
+
+.selector  {
+    justify-content: start;
+    width: 300px;
+    color: #222;
+    background: none;
+    font-size: 30px;
+    font-family: Coda;
+    
+    border-bottom: 1px solid black;
+}
+
+.selector option {
+    background-color: #299689;
+    color: white;
+}
+
+.btn-next {
+    padding: 20px;
+    font-size: 1.3rem;
+    right: 20px;
+    bottom: 40px;
+    display: block;
+    position: fixed;
+    font-family: Coda;
+    background-color: #299689;
+    color: white;
+}
+
+.btn-previous {
+    background-color: #299689;
+    padding: 20px;
+    font-size: 1.3rem;
+    left: 20px;
+    bottom: 40px;
+    display: block;
+    position: fixed;
+    font-family: Coda;
+    color: white;
+}
+
+.btn-previous.active {
+    display: none;
+}
+
+.progress {
+    height: 4px;
+    width: 0;
+    transition: 1s;
+    background-color: black;
+}

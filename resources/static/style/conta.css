@@ -1,0 +1,284 @@
+/* MAIN */
+
+
+/* TELA DE LOGIN */
+
+.tela-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 35px 0;
+    min-height: calc(100vh - 135px);
+    text-align: center;
+}
+
+.tela-login img {
+    width: 200px;
+    margin-bottom: 35px;
+}
+
+.tela-login h2 {
+    font-family: var(--displayFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    letter-spacing: 0.05em;
+    color: var(--secundaria);
+    margin-bottom: 35px;
+}
+
+.tela-login form {
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tela-login form input {
+    width: 500px;
+    height: 85px;
+    padding: 0 15px;
+    text-align: center;
+    color: var(--terciaria);
+    font-family: Coda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--secundaria);
+}
+
+.tela-login form input:focus {
+    outline: none;
+}
+
+.tela-login a {
+    font-family: var(--displayFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: var(--secundaria);
+}
+
+.tela-login form button {
+    width: 245px;
+    height: 85px;
+    font-family: var(--displayFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.1em;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* TELA DE CADASTRO */
+
+.tela-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 35px 0;
+    min-height: calc(100vh - 135px);
+    text-align: center;
+}
+
+.tela-cadastro-container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 80vh;
+    flex-direction: row;
+}
+
+.tela-cadastro-beneficios {
+    width: 385px;
+    background-color: var(--terciaria);
+    color: var(--secundaria);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tela-cadastro-beneficios .beneficio {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+    font-family: var(--displayFont);
+}
+
+.tela-cadastro-beneficios .apresentacao h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.tela-cadastro-beneficios .apresentacao p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.8;
+}
+
+.tela-cadastro-beneficios .beneficio img {
+    height: 24px;
+}
+
+.tela-cadastro-beneficios .beneficio h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.tela-cadastro-beneficios .beneficio p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    opacity: 0.8;
+}
+
+.tela-cadastro-criar-conta {
+    width: calc(100% - 385px);
+    background-color: var(--secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.criar-conta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 170px);
+    height: calc(100% - 110px);
+}
+
+.tela-cadastro-criar-conta .botoes-conta-container {
+    display: flex;
+    width: calc(100% - 170px);
+    justify-content: flex-end;
+}
+
+.tela-cadastro-criar-conta .botoes-conta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tela-cadastro-criar-conta .botoes-conta p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.tela-cadastro-criar-conta .botoes-conta button {
+    font-family: var(--displayFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    width: 60px;
+    height: 30px;
+    background-color: var(--terciaria);
+    color: var(--secundaria);
+}
+
+.tela-cadastro-criar-conta .criar-conta-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.tela-cadastro-criar-conta .criar-conta-container form h2 {
+    font-family: var(--displayFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    margin-bottom: 25px;
+}
+
+.tela-cadastro-criar-conta .criar-conta-container form button {
+    width: 290px;
+    height: 43px;
+    font-family: var(--displayFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--secundaria);
+    background-color: var(--green);
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadastrarGoogle {
+    background-color: #FF3131;
+}
+
+#cadastrarFacebook {
+    background-color: #1E1EFF;
+}
+
+.tela-cadastro-criar-conta .criar-conta-container form input {
+    width: 290px;
+    height: 43px;
+    background-color: var(--terciaria);
+    color: var(--secundaria);
+    font-family: var(--displayFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.tela-cadastro-criar-conta .criar-conta-container form input::placeholder {
+    color: var(--secundaria);
+    opacity: 0.8;
+}
+
+
+/* -----------------
+    RESPONSIVIDADE 
+-------------------*/
+
+@media screen and (max-width: 550px) {
+
+    .tela-login form input {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .tela-login form input {
+
+        width: 300px;
+    }
+}

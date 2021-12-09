@@ -1,0 +1,353 @@
+
+
+/* ANIMAÇÕES */
+@keyframes navbarin {
+    0% {
+        left: -300px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes carrossel-dir {
+
+    0%{
+        opacity: 0%;
+        left: -50px;
+ }
+
+ 100%{
+     opacity: 100%;
+    left: 0px;
+}
+    }
+
+
+@keyframes carrossel-esq {
+        0%{
+            opacity: 0%;
+            right: -50px;
+     }
+     100%{
+         opacity: 100%;
+        right: 0px;
+    }
+    }
+
+    /* DASHBOARD */
+.cabecalho-meus-imoveis {
+    height: 400px;
+    background: #299689;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 30px;
+    padding: 90px 30px;
+}
+
+.cabecalho-meus-imoveis h2 {
+    font-size: 72px;
+    font-weight: 100;
+    max-width: max-content;
+}
+
+.cabecalho-meus-imoveis a {
+    font-size: 20px;
+}
+
+.informacoes-servico {
+    width: 100%;
+    background-color: #222;
+
+}
+
+.carrossel {
+    background-color: #fff;
+    width: 90%;
+    height: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 5%;
+    background-color: #222;
+
+}
+
+.imagems-carrossel {
+    position: absolute;
+    width: 100%;
+    animation: carrossel 2s ;
+    object-fit: cover;
+    display: none;
+    height: 108%;
+    margin-top: -50px;
+}
+
+.imagems-carrossel.active {
+    display: block;
+}
+
+.btn-carrossel {
+    padding: 25px 30px;
+    top: 40%;
+    right: 20px;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: #299689;
+    cursor: pointer;
+}
+
+.btn-carrossel-1 {
+    padding: 25px 30px;
+    top: 40%;
+    left: 20px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: #299689;
+    cursor: pointer;
+}
+
+.bolinhas {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    column-gap: 20px;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+ 
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
+    z-index: 10000;
+}
+
+.bolinhas i{
+    transition: 0.5s ;
+}
+
+/* SESSÃO DADOS DO IMOVEL  */
+
+.servicos-dashboard {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        'preco descricao descricao'
+        'preco descricao descricao '
+        'preco dados dados'
+    ;
+    padding: 20px 30px;
+}
+
+
+.preco-dashboard {
+    color: #fff;
+    grid-area: preco;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    
+}
+
+.preco-dashboard a{
+    padding: 15px 40px;
+    background-color: rgba(255, 247, 239, 70%);
+    color: black;
+    
+}
+
+.descricao-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    grid-area: descricao;
+    background-color: #222;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.descricao-dashboard textarea{
+    resize: none;
+    background: none;
+    width: 100%;
+    color: white;
+    font-family: Coda;
+    font-size: 1.4rem;
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+
+.descricao-dashboard textarea::-webkit-scrollbar{
+    display: none;
+}
+.descricao-dashboard textarea:focus{
+    outline: none;
+}
+
+.preco-dashboard input{
+    font-family: Coda;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    margin-bottom: 10px;
+    text-align: center;
+    
+
+    
+}
+
+.preco-dashboard input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+.preco-dashboard input:focus{
+    outline: none;    
+}
+
+.descricao-dashboard h2 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.descricao-dashboard p {
+    color: #fff;
+}
+
+.dados-imovel-dashboard {
+    grid-area: dados;
+    padding:5%;
+    background-color:#222 ;    
+}
+.dados-imovel-dashboard h2{
+margin-bottom: 50px;
+font-size: 3rem;
+font-weight: 400;
+-webkit-text-stroke-width: 1px;
+color: transparent;
+-webkit-text-stroke-color: #fff;
+}
+
+.dados-imovel-dashboard-especificacoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   row-gap: 50px;
+    column-gap: 50px;
+}
+.especificacoes-info{
+    font-size:18px ;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.titulo-especificacao-dashboard{
+    color: #ccc;
+}
+
+.conteudo-especificacao-dashboard{
+justify-content: start;
+width: 150px;
+height: 100%;
+color: white;
+background: none;
+font-size:18px;
+font-family: Coda;
+}
+
+
+.selector-data::-webkit-scrollbar{
+    display: none;
+}
+
+.selector{
+    justify-content: start;
+    width: 150px;
+    height: 100%;
+    color: white;
+    background: none;
+    font-size:18px;
+    font-family: Coda; 
+    }
+
+    
+.selector option{
+        background-color: #299689;
+       }
+
+.conteudo-especificacao-dashboard:focus{
+    outline: none;
+}
+
+
+
+/* GRAFICO */
+
+.grafico-usuarios-interessados{
+    width: 100%;
+   background-color: white;
+   padding: 50px 30px;
+   background: #299689;
+
+}
+
+.titulo-usuario{
+    width: 100%;
+    font-size: 2rem;
+    color: white;
+}
+
+.usuarios-interessados{
+    width: 100%;
+}
+
+.usuario-dashboard{
+    display: flex; 
+    height: 200px;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.informacoes-dashboard{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.informacoes-dashboard-1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.usuario-dashboard .nome-usuario{
+    font-size: 1.9rem;
+}
+.usuario-dashboard img{
+    width: 100px;
+}
+
+.telefone-usuario {
+    font-size: 1.5rem;
+    text-align: right;
+}
